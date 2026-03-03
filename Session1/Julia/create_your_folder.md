@@ -3,6 +3,7 @@
 ☐ GitHub account configured in VS Code (https://code.visualstudio.com/docs/sourcecontrol/github)<br>
 ☐ Repository already cloned to your local machine (follow the slide: Join GitHub)<br>
 
+
 ## 1.2.1 Simply create your own folder under Session1:
 1. Copy STARTER folder;
 2. Paste it under Session1 folder;
