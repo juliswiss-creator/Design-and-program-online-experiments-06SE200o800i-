@@ -25,22 +25,15 @@ head,body {
     font-weight: bold;
 }
 
+.final{
+    background-color: beige;
+}
 
 /* id selector */
 #submit_button{
     font-weight: bold;
-<<<<<<< HEAD
     color: blue;
     border: 2px solid black;
 }
 
-.final {
-    background-color: beige
-}
-=======
-    color: red;
-    border: 2px solid black;
-}
-
->>>>>>> upstream/main
 

@@ -12,13 +12,8 @@ console.log(example); // ? -> 10
 
 let a = 8;
 let b = 2;
-<<<<<<< HEAD
-console.log(a+b); // 10
-console.log(8**2); // 64
-=======
 console.log(a+b); // ?
 console.log(8**2); // ?
->>>>>>> upstream/main
 
 
 /* 4.2.2: Equality and Strict Equality:
@@ -26,17 +21,10 @@ First, work out from what you understand by replacing the ? with your expected o
 let x = 5;
 let y = "5";
 
-<<<<<<< HEAD
-console.log(x == y);  // true
-console.log(x === y); // false
-console.log(x != y);  // false
-console.log(x !== y); // true
-=======
 console.log(x == y);  // ?
 console.log(x === y); // ?
 console.log(x != y);  // ?
 console.log(x !== y); // ?
->>>>>>> upstream/main
 
 
 /* 4.2.3: logical operators:
@@ -44,17 +32,6 @@ First, work out from what you understand by replacing the ? with your expected o
 let isAdult = true;
 let hasNormalVision = false;
 
-<<<<<<< HEAD
-console.log(isAdult && hasNormalVision); // false
-console.log(isAdult || hasNormalVision); // true
-
-let score = 50;
-
-console.log(score > 40 && score < 60);  // true
-console.log(score * 2 === 100);         // true
-console.log(score % 2 === 0 || score < 0); // true
-
-=======
 console.log(isAdult && hasNormalVision); // ?
 console.log(isAdult || hasNormalVision); // ?
 
@@ -63,7 +40,6 @@ let score = 50;
 console.log(score > 40 && score < 60);  // ?
 console.log(score * 2 === 100);         // ?
 console.log(score % 2 === 0 || score < 0); // ?
->>>>>>> upstream/main
 
 
 /* 4.2.4: what this newFunction will return:  
