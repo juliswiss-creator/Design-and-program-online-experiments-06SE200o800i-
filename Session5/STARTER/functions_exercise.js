@@ -3,18 +3,27 @@
 //complete following named function called isFasterThanThreshold 
 // that takes the reaction time (responseTime) as an input parameter.
 // It should return "too fast" if the reaction time is faster than the threshold, otherwise "valid".
-const threshold = 300; 
-function isFasterThanThreshold(responseTime) {
+
     // Write logic to check if the reaction time is faster than the threshold
 
+const threshold = 300; 
+
+function isFasterThanThreshold(responseTime) {
+  if (responseTime < threshold) {
+    return "too fast";
+  } else {
+    return "valid";
   }
-  
+}
+
 // Call the function with different inputs
-console.log(`Expected output: ${isFasterThanThreshold(200)}`)
+console.log(`Expected output: ${isFasterThanThreshold(200)}`);
 // Expected output: "too fast"
-console.log(`Expected output: ${isFasterThanThreshold(400)}`)
+console.log(`Expected output: ${isFasterThanThreshold(400)}`);
 // Expected output: "valid"
-  
+
+
+
 /* exercise 5.2.4 */
 
 // Write a function that calculates the average reaction time from an array of six response times. 
