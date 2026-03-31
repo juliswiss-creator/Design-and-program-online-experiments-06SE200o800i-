@@ -101,14 +101,25 @@ const drawBunnyfn = function (canvas){
 
 }
 
+// bunny trial after fixation
+const bunny_trial = {
+    type: jsPsychCanvasKeyboardResponse,
+    stimulus: drawBunnyfn,
+    canvas_size: [1000, 1000],
+    choices: [' ']
+};
+timeline.push(bunny_trial);
 
 const end = {
     type: jsPsychHtmlKeyboardResponse,
-    stimulus: "<h2>👍<h2>",
+    stimulus: "<h2>👍</h2>",
+    prompt: "<p>Great job!</p>",
     choices: "NO_KEYS",
     trial_duration: 1000
 }
 timeline.push(end)
+
+
 
 // step 4: run the timline
 
