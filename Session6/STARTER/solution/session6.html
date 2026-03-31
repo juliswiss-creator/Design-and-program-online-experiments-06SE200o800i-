@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="session6.css">
+      <title>Session 6</title>
+</head>
+<body>
+    <h1>6.2 Add array_method_exercise.js to this HTML</h1>
+    <script src = "array_method_exercise.js"> </script>
+
+
+
+
+    <!-- <script>
+        let responseTimes4 = [1,2,3,4]
+        let newvar;
+        let newvar2 =[]; 
+        responseTimes4.forEach(
+        (time, index) =>
+        {
+            console.log ("before", newvar);
+            console.log(time);
+            console.log(index)
+             newvar2[index] =  time;
+            // newvar[index] = time;
+            console.log ("after", newvar);
+            console.log ("before", newvar2);
+        }
+        );
+
+    </script> -->
+    
+
+    <!DOCTYPE html>
+<html>
+<head>
+  <title>jsPsych Test</title>
+
+  <!-- Load jsPsych -->
+  <script src="https://unpkg.com/jspsych@7.3.0"></script>
+
+  <!-- Load plugin -->
+  <script src="https://unpkg.com/@jspsych/plugin-html-keyboard-response@1.1.2"></script>
+</head>
+
+<body></body>
+
+<!DOCTYPE html>
+<html>
+<head>
+  <title>jsPsych Test</title>
+  <script src="https://unpkg.com/jspsych@7.3.0"></script>
+  <script src="https://unpkg.com/@jspsych/plugin-html-keyboard-response@1.1.2"></script>
+</head>
+<body></body>
+
+<script>
+  const jsPsych = initJsPsych();
+
+  let welcome = {
+    type: jsPsychHtmlKeyboardResponse,
+    stimulus: 'Welcome to the experiment! Press any key to begin.',
+    choices: "ALL_KEYS"
+  };
+
+  let instruction = {
+    type: jsPsychHtmlKeyboardResponse,
+    stimulus: 'In this experiment, you will see some text and respond with a keypress.',
+    choices: "ALL_KEYS"
+  };
+
+  let timeline = [welcome, instruction];
+
+  jsPsych.run(timeline);
+</script>
+</html>
+
+</html>
+    
+
+
+</body>
+</html>
