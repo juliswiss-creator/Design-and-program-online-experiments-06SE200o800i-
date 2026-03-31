@@ -9,7 +9,12 @@
 
 //step 2:  initiate jsPsych
 
+        const jsPsych = initJsPsych();
+        const timeline = [];
+        jsPsych.run(timeline);
+
 // step 3: building timeline 
+
 
 // instruction 
 const instruction = {
@@ -23,11 +28,12 @@ timeline.push(instruction);
 
 // 7.2.2 make the trial_duration randomly selected from 1s, 2s or 3s
 // fixation 
+const randomDuration = [1000, 2000, 3000];
 const fixation = {
     type: jsPsychHtmlKeyboardResponse,
     stimulus: "+",
     choices: "NO_KEYS",
-    trial_duration: 1000
+    trial_duration: randomDuration[Math.floor(Math.random() * randomDuration.length)] // you can change it to randomDuration[Math.floor(Math.random() * randomDuration.length)] to make it randomly selected from 1s, 2s or 3s
 }
 timeline.push(fixation);
 
