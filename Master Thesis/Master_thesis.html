@@ -1,0 +1,143 @@
+<style>
+.container {
+  display: flex;
+  justify-content: center;   /* horizontal */
+  align-items: center;       /* vertical */
+  height: 100vh;             /* full screen height */
+  flex-direction: column;    /* keep text above dropdown */
+}
+</style>
+
+<div class="container">
+  <p>What are you doing?:</p>
+  <select name="activity">
+    <option value="" disabled selected>Please select what you were doing before the beep</option>
+    <option>work / school</option>
+    <option>paid work</option>
+    <option>housekeeping</option>
+    <option>self-care</option>
+    <option>relaxing</option>
+    <option>sport / physical activity</option>
+    <option>eating, drinking</option>
+    <option>traveling, on the road</option>
+    <option>having a conversation</option>
+    <option>watching television / social media</option>
+    <option>nothing</option>
+  </select>
+</div>
+
+<h2 style="text-align: center;">Pleasure</h2>
+
+<h3 style="text-align:center;">This activity makes me feel good.</h3>
+
+<div style="width:320px; margin:40px auto; text-align:center;">
+  <input type="range" min="1" max="7" value="5" step="1"
+         oninput="this.nextElementSibling.value = this.value"
+         style="width:100%;">
+
+  <!-- Numbers -->
+  <div style="display:grid; grid-template-columns:repeat(7, 1fr);">
+    <span>1</span><span>2</span><span>3</span>
+    <span>4</span><span>5</span><span>6</span><span>7</span>
+  </div>
+
+  <!-- Labels aligned to 1, 5, 7 -->
+  <div style="display:grid; grid-template-columns:repeat(7, 1fr); margin-top:5px; font-size:0.9em;">
+    <span style="grid-column:1;">Strongly Disagree</span>
+    <span style="grid-column:5; text-align:center;">Somewhat Agree</span>
+    <span style="grid-column:7; text-align:right;">Strongly Agree</span>
+  </div>
+</div>
+
+<h2 style="text-align: center;">Relatedness</h2>
+
+<h3 style="text-align:center;">I felt close to others during the activity.</h3>
+
+<div style="width:320px; margin:40px auto; text-align:center;">
+  <input type="range" min="1" max="7" value="5" step="1"
+         oninput="this.nextElementSibling.value = this.value"
+         style="width:100%;">
+
+  <!-- Numbers -->
+  <div style="display:grid; grid-template-columns:repeat(7, 1fr);">
+    <span>1</span><span>2</span><span>3</span>
+    <span>4</span><span>5</span><span>6</span><span>7</span>
+  </div>
+
+  <!-- Labels aligned to 1, 5, 7 -->
+  <div style="display:grid; grid-template-columns:repeat(7, 1fr); margin-top:5px; font-size:0.9em;">
+    <span style="grid-column:1;">Strongly Disagree</span>
+    <span style="grid-column:5; text-align:center;">Somewhat Agree</span>
+    <span style="grid-column:7; text-align:right;">Strongly Agree</span>
+  </div>
+</div>
+
+<h2 style="text-align: center;">Competence</h2>
+
+<h3 style="text-align:center;">I am good at this activity.</h3>
+
+<div style="width:320px; margin:40px auto; text-align:center;">
+  <input type="range" min="1" max="7" value="5" step="1"
+         oninput="this.nextElementSibling.value = this.value"
+         style="width:100%;">
+
+  <!-- Numbers -->
+  <div style="display:grid; grid-template-columns:repeat(7, 1fr);">
+    <span>1</span><span>2</span><span>3</span>
+    <span>4</span><span>5</span><span>6</span><span>7</span>
+  </div>
+
+  <!-- Labels aligned to 1, 5, 7 -->
+  <div style="display:grid; grid-template-columns:repeat(7, 1fr); margin-top:5px; font-size:0.9em;">
+    <span style="grid-column:1;">Strongly Disagree</span>
+    <span style="grid-column:5; text-align:center;">Somewhat Agree</span>
+    <span style="grid-column:7; text-align:right;">Strongly Agree</span>
+  </div>
+</div>
+
+<h2 style="text-align: center;">Challenge/Improvement</h2>
+
+<h3 style="text-align:center;">I felt challenged, but not under-challenged, <br>
+  during the activity.</h3>
+
+<div style="width:320px; margin:40px auto; text-align:center;">
+  <input type="range" min="1" max="7" value="5" step="1"
+         oninput="this.nextElementSibling.value = this.value"
+         style="width:100%;">
+
+  <!-- Numbers -->
+  <div style="display:grid; grid-template-columns:repeat(7, 1fr);">
+    <span>1</span><span>2</span><span>3</span>
+    <span>4</span><span>5</span><span>6</span><span>7</span>
+  </div>
+
+  <!-- Labels aligned to 1, 5, 7 -->
+  <div style="display:grid; grid-template-columns:repeat(7, 1fr); margin-top:5px; font-size:0.9em;">
+    <span style="grid-column:1;">Strongly Disagree</span>
+    <span style="grid-column:5; text-align:center;">Somewhat Agree</span>
+    <span style="grid-column:7; text-align:right;">Strongly Agree</span>
+  </div>
+</div>
+
+<h2 style="text-align: center;">Engagement</h2>
+
+<h3 style="text-align:center;">I lost track of time during the activity.</h3>
+
+<div style="width:320px; margin:40px auto; text-align:center;">
+  <input type="range" min="1" max="7" value="5" step="1"
+         oninput="this.nextElementSibling.value = this.value"
+         style="width:100%;">
+
+  <!-- Numbers -->
+  <div style="display:grid; grid-template-columns:repeat(7, 1fr);">
+    <span>1</span><span>2</span><span>3</span>
+    <span>4</span><span>5</span><span>6</span><span>7</span>
+  </div>
+
+  <!-- Labels aligned to 1, 5, 7 -->
+  <div style="display:grid; grid-template-columns:repeat(7, 1fr); margin-top:5px; font-size:0.9em;">
+    <span style="grid-column:1;">Strongly Disagree</span>
+    <span style="grid-column:5; text-align:center;">Somewhat Agree</span>
+    <span style="grid-column:7; text-align:right;">Strongly Agree</span>
+  </div>
+</div>
